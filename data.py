@@ -17,5 +17,17 @@ z = y[0]
 print(y)
 print(z) """
 
-sent = input("Give me a sentence")
-print(sent)
+""" sent = input("Give me a sentence") # this function takes a sentence and tells you how many words are in it I'm very proud of it :3
+wordlist = sent.split( )
+wordnumber = 0
+for i in wordlist:
+    wordnumber = wordnumber + 1
+print(wordnumber) """
+
+# Now it's time for the madlibs project. yeehaw.
+verb1 = input("Give me a verb.")
+verb2 = input("Give me another")
+noun = input("Give me a noun.")
+numeral = input("Give me a number in writen form. Like, one not 1.")
+guest = input("Lastly, give me a famous person. They don't have to be real, they just need to be popular.")
+# put more things here if you need them, kay ;3
