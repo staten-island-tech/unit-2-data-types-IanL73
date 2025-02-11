@@ -47,9 +47,51 @@ print("Once upon a time, there lived one",name+".",name,"was taking nice stroll 
 day_of_week = input("what day is it? ")
 if day_of_week == "Friday":
     print("correct")
-else:
+else:32
     print("incorrect") """
 
-#F string
+""" #F string
 x = "bees"
-print(f"hello {x}")
+print(f"hello {x}") """
+
+""" temp = 75
+if temp > 68:
+    print('warm')
+elif temp == 68:
+    print('perfect')
+else:
+    print('cold') """
+
+""" # odd or eveniffyer
+number = int(input("gimme a number."))
+remainder = number % 2
+if remainder == 0:
+    print("Dawg, that number is SO even you wouldn't be able to believe, man. It's SO even.")
+else:
+    print("Arite, broski, I'm sorry, but that number, aint even. It's as odd as a dog eating icecream on a skateboard peeps.") """
+
+Bill = float(input("What's your bill."))
+while True:
+    service = input("How would you rate your service today (please say good)")
+    if service == "Good":
+        print("Great, great. Then your tip should be 15%")
+        Tip = Bill / 0.15
+        FinalPay = Bill + Tip
+        break
+    elif service == "Okay":
+        print("oh, uh, okay, I'll take it.")
+        Tip = Bill / 0.15
+        FinalPay = Bill + Tip
+        break
+    elif service == "Bad":
+        print("Great, great. Then your tip should be 15%")
+        Tip = Bill / 0.15
+        FinalPay = Bill + Tip
+        break
+    elif service == "Great":
+        print("Great! Please come back.")
+        Tip = Bill / 0.15
+        FinalPay = Bill + Tip
+        break
+    else:
+        print("that's not a valid rating. it needs to be either Good, Great, Okay, or Bad. Case sensitive. Let's try that again.")
