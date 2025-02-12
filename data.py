@@ -70,28 +70,44 @@ if remainder == 0:
 else:
     print("Arite, broski, I'm sorry, but that number, aint even. It's as odd as a dog eating icecream on a skateboard peeps.") """
 
+""" # Tip calculator
 Bill = float(input("What's your bill."))
 while True:
     service = input("How would you rate your service today (please say good)")
-    if service == "Good":
-        print("Great, great. Then your tip should be 15%")
-        Tip = Bill / 0.15
+    if service == "Good" or "good":
+        print("Alright, I'll take it. Then your tip should be 20%")
+        Tip = Bill * 0.2
         FinalPay = Bill + Tip
+        print(f"Okay! Your total should be {FinalPay}, including tip.")
         break
     elif service == "Okay":
-        print("oh, uh, okay, I'll take it.")
-        Tip = Bill / 0.15
+        print("oh, uh, okay, I'll take it. Your tip should be 15%.")
+        Tip = Bill * 0.15
         FinalPay = Bill + Tip
+        print(f"Okay! Your total should be {FinalPay}, including tip.")
         break
     elif service == "Bad":
-        print("Great, great. Then your tip should be 15%")
-        Tip = Bill / 0.15
+        print("Oh, okay. Well, your tip should be 0%, then. I guess.")
+        Tip = 0
         FinalPay = Bill + Tip
+        print(f"Okay. Your total should be {FinalPay}, including tip.")
         break
     elif service == "Great":
-        print("Great! Please come back.")
-        Tip = Bill / 0.15
+        print("Great! Your tip should be 25%, then.")
+        Tip = Bill * 0.25
         FinalPay = Bill + Tip
+        print(f"Okay! Your total should be {FinalPay}, including tip.")
         break
     else:
-        print("that's not a valid rating. it needs to be either Good, Great, Okay, or Bad. Case sensitive. Let's try that again.")
+        print("that's not a valid rating. it needs to be either Good, Great, Okay, or Bad. No spaces, just input it directly into the terminal. Let's try that again.") """
+
+# Factor-Finder 300
+num = int(input("NUMBER. NOW."))
+step = num
+for i in range(num):
+    fact = num % step
+    if fact == 0:
+        print(num / step)
+        step = step - 1
+    else:
+        step = step - 1
