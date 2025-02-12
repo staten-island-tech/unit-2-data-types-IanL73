@@ -101,7 +101,7 @@ while True:
     else:
         print("that's not a valid rating. it needs to be either Good, Great, Okay, or Bad. No spaces, just input it directly into the terminal. Let's try that again.") """
 
-# Factor-Finder 300
+""" # Factor-Finder 3000
 num = int(input("NUMBER. NOW."))
 step = num
 for i in range(num):
@@ -109,5 +109,22 @@ for i in range(num):
     if fact == 0:
         print(num / step)
         step = step - 1
+    else:
+        step = step - 1 """
+
+# Factor-Finder 2.0
+num1 = int(input("NUMBER. NOW."))
+num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER"))
+step1 = num1
+step2 = num1
+for i in range(num1):
+    fact = num1 % step1
+    if fact == 0:
+        for i in range(num2):
+            fact = num2 % step2
+            if fact == 0:
+                
+            else:
+                step = step - 1
     else:
         step = step - 1
