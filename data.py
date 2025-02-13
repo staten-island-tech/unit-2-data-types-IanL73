@@ -113,18 +113,28 @@ for i in range(num):
         step = step - 1 """
 
 # Factor-Finder 2.0
-num1 = int(input("NUMBER. NOW."))
-num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER"))
+list_placement = 0
+factlist = [] # list of common factors
+num1 = int(input("NUMBER. NOW.")) # the first number
+num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER")) # the second number
 step1 = num1
 step2 = num1
-for i in range(num1):
+for i in range(num1): # check number 1's factor set
     fact = num1 % step1
-    if fact == 0:
-        for i in range(num2):
-            fact = num2 % step2
-            if fact == 0:
-                
+    if fact == 0: # when find a factor...
+        factor1 = num1 / step1 # set that factor as a variable
+        for i in range(num2): # and check number 2's factor list
+            fact = num2 % step2 # ISSUE HERE
+            if fact == 0: # when find a factor
+                factor2 = num2 / step2
+                if factor1 == factor2: #see if it equals first found factor
+                    factlist.append(factor2)
+                    list_placement = list_placement + 1
+                    step2 = step2 - 1
+                else:
+                    step2 = step2 - 1    
             else:
-                step = step - 1
+                step2 = step2 - 1
     else:
         step = step - 1
+print(factlist)
