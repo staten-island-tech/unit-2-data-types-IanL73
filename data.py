@@ -103,38 +103,35 @@ while True:
 
 """ # Factor-Finder 3000
 num = int(input("NUMBER. NOW."))
-step = num
 for i in range(num):
-    fact = num % step
+    fact = num % (i + 1)
     if fact == 0:
-        print(num / step)
-        step = step - 1
+        print(num / (i + 1))
     else:
-        step = step - 1 """
+        num = num """
 
 # Factor-Finder 2.0
 list_placement = 0
 factlist = [] # list of common factors
 num1 = int(input("NUMBER. NOW.")) # the first number
 num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER")) # the second number
-step1 = num1
-step2 = num1
 for i in range(num1): # check number 1's factor set
-    fact = num1 % step1
+    step = i + 1
+    fact = num1 % step
     if fact == 0: # when find a factor...
-        factor1 = num1 / step1 # set that factor as a variable
+        factor1 = num1 / step # set that factor as a variable
         for i in range(num2): # and check number 2's factor list
-            fact = num2 % step2 # ISSUE HERE
+            fact = num2 % step 
             if fact == 0: # when find a factor
-                factor2 = num2 / step2
+                factor2 = num2 / step
                 if factor1 == factor2: #see if it equals first found factor
                     factlist.append(factor2)
                     list_placement = list_placement + 1
-                    step2 = step2 - 1
                 else:
-                    step2 = step2 - 1    
+                    num1 = num1
             else:
-                step2 = step2 - 1
+                num1 = num1
     else:
-        step = step - 1
+        num1 = num1
 print(factlist)
+print(step)
