@@ -143,7 +143,7 @@ step1 = 1
 list_placement = 0
 factlist = [] # list of common factors
 num1 = int(input("NUMBER. NOW.")) # the first number
-num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER")) # the second number
+num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER.")) # the second number
 for i in range(num1): # check number 1's factor set
     fact = num1 % step1
     if fact == 0: # when find a factor...
