@@ -110,28 +110,58 @@ for i in range(num):
     else:
         num = num """
 
-# Factor-Finder 2.0
+""" # Factor-Finder 2.0
+step1 = 1
+step2 = 1
 list_placement = 0
 factlist = [] # list of common factors
 num1 = int(input("NUMBER. NOW.")) # the first number
 num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER")) # the second number
 for i in range(num1): # check number 1's factor set
-    step = i + 1
-    fact = num1 % step
+    fact = num1 % step1
     if fact == 0: # when find a factor...
-        factor1 = num1 / step # set that factor as a variable
+        factor1 = num1 / step1 # set that factor as a variable
+        step1 = step1 + 1
         for i in range(num2): # and check number 2's factor list
-            fact = num2 % step 
+            fact = num2 % step2
             if fact == 0: # when find a factor
-                factor2 = num2 / step
+                factor2 = num2 / step2
                 if factor1 == factor2: #see if it equals first found factor
                     factlist.append(factor2)
                     list_placement = list_placement + 1
+                    step2 = step2 + 1
                 else:
-                    num1 = num1
+                    step2 = step2 + 1
             else:
-                num1 = num1
+                step2 = step2 + 1
     else:
-        num1 = num1
+        step1 = step1 + 1
+print(factlist) """
+
+# testy testy testy
+step1 = 1
+list_placement = 0
+factlist = [] # list of common factors
+num1 = int(input("NUMBER. NOW.")) # the first number
+num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER")) # the second number
+for i in range(num1): # check number 1's factor set
+    fact = num1 % step1
+    if fact == 0: # when find a factor...
+        factor1 = num1 / step1 # set that factor as a variable
+        step1 = step1 + 1
+        while True:
+            step2 = 1
+            fact = num2 % step2
+            if fact == 0: # when find a factor
+                factor2 = num2 / step2
+                if factor1 == factor2: #see if it equals first found factor
+                    factlist.append(factor2)
+                    list_placement = list_placement + 1
+                    break  
+                else:
+                    step2 = step2 + 1
+            else:
+                step2 = step2 + 1
+    else:
+        step1 = step1 + 1
 print(factlist)
-print(step)
