@@ -149,8 +149,8 @@ for i in range(num1): # check number 1's factor set
     if fact == 0: # when find a factor...
         factor1 = num1 / step1 # set that factor as a variable
         step1 = step1 + 1
+        step2 = 1
         while True:
-            step2 = 1
             fact = num2 % step2
             if fact == 0: # when find a factor
                 factor2 = num2 / step2
