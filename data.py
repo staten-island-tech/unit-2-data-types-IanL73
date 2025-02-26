@@ -113,7 +113,6 @@ for i in range(num):
 # Factor-Finder 2.0
 step1 = 1
 factlist = [] # list of common factors
-list_placement = -1
 num1 = int(input("NUMBER. NOW.")) # the first number
 num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER.")) # the second number
 for i in range(num1): # check number 1's factor set
@@ -122,13 +121,12 @@ for i in range(num1): # check number 1's factor set
         factor1 = num1 / step1 # set that factor as a variable
         step1 = step1 + 1
         step2 = 1
-        while True:
+        for i in range(num2):
             fact = num2 % step2
             if fact == 0: # when find a factor
                 factor2 = num2 / step2
                 if factor1 == factor2: #see if it equals first found factor
                     factlist.append(factor2)
-                    list_placement = list_placement + 1
                     break  
                 else:
                     step2 = step2 + 1
@@ -136,4 +134,4 @@ for i in range(num1): # check number 1's factor set
                 step2 = step2 + 1
     else:
         step1 = step1 + 1
-print(factlist)
+print(factlist[0])
