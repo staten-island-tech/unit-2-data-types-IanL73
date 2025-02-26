@@ -110,7 +110,7 @@ for i in range(num):
     else:
         num = num """
 
-# Factor-Finder 2.0
+""" # Factor-Finder 2.0
 step1 = 1
 factlist = [] # list of common factors
 num1 = int(input("NUMBER. NOW.")) # the first number
@@ -125,7 +125,7 @@ for i in range(num1): # check number 1's factor set
             fact = num2 % step2
             if fact == 0: # when find a factor
                 factor2 = num2 / step2
-                if factor1 == factor2: #see if it equals first found factor
+                if factor1 == factor2: #see if it equals first found factor     
                     factlist.append(factor2)
                     break  
                 else:
@@ -134,4 +134,4 @@ for i in range(num1): # check number 1's factor set
                 step2 = step2 + 1
     else:
         step1 = step1 + 1
-print(factlist[0])
+print(factlist[0]) """
