@@ -168,7 +168,7 @@ while True:
         step1 = step1 + 1
 print(factlist[0]) """
 
-x = False
+""" x = False
 step1 = 1
 num1 = int(input("NUMBER. NOW.")) # the first number
 num2 = int(input("NUMBER. NOW. AGAIN. DIFFERENT NUMBER.")) # the second number
@@ -190,4 +190,12 @@ while x == False:
             else:
                 step2 = step2 + 1
     else:
-        step1 =+ 1
+        step1 =+ 1 """
+
+numfac1 = []
+numfac2 = []
+
+num1
+
+for i in range (1,num1+1):
+    if num1 % i == 0:
