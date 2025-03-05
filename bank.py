@@ -6,7 +6,7 @@ while True:
         print("Goodbye!")
         break
     else:
-        draw = int(input("How much withdraw, boy."))
+        draw = float(input("How much withdraw, boy."))
         if draw > money:
             print("You don't have that much, boy.")
         else:
