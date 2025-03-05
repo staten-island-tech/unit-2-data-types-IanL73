@@ -192,10 +192,30 @@ while x == False:
     else:
         step1 =+ 1 """
 
-""" numfac1 = []
+numfac1 = []
 numfac2 = []
 
-num1
+""" num1 = int(input("first number"))
+num2 = int(input("second number")) """
+num1 = 45
+num2 = 60
 
-for i in range (1,num1+1):
-    if num1 % i == 0: """
+for i in range(1,num1+1):
+    if num1 % i == 0:
+        numfac1.append(i)
+
+for u in range(1, num2 + 1):
+    if num2 % u == 0:
+        numfac2.append(u)
+
+print(numfac1)
+
+print(numfac2)
+
+common = []
+
+for y in range(len(numfac1)):
+    place1 = 1
+    place2 = 1
+    if numfac1(place1) == numfac2(place2):
+        
